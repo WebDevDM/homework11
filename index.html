@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="bookworm.png" type="image/x-icon">
+
+    <title>Bookworm</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">About</h4>
+              <p class="text-muted" style="font-size: 18px;">If you're always looking for something new to read, then wiggle your way down below. We choose a new selection of books every week for you to read and buy based on absoultely nothing at all! So you can be sure you'll be getting good value for money and a great read :)</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li><a target="_new" href="https://www.twitter.com" class="text-white">Follow us on Twitter</a></li>
+                <li><a target="_new" href="https://www.facebook.com" class="text-white">Friend us on Facebook</a></li>
+                <li><a target="_new" href="https://www.instagram.com" class="text-white">Check Us Out on Insta</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <img id="navimg" src="bookworm.png" alt="">
+            <strong>Bookworm</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+
+      <section class="jumbotron text-center" style="background-color: rgba(112, 70, 36, 0.37);">
+        <div class="container">
+          <h1 class="jumbotron-heading">Welcome to Bookworm!</h1>
+          <p class="lead text" style="font-size: 22px;">Here at Bookworm we stock a small collection of the world's trending books! <br><br> Check out a new selection every week!</p>
+          <p>
+            <a id="worminbutton" href="#bookselect" class="btn btn-primary my-2" style="background-color: rgb(44, 153, 117); border-color: rgb(255, 255, 255);">Start Wormin'!</a>
+            <a href="#yourcart" class="btn btn-secondary my-2">Your Cart</a>
+          </p>
+        </div>
+      </section>
+
+      <div id="bookselect" class="album py-5" style="background-color: rgba(95, 51, 22, 0.637);">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img id="cardimg1" class="cardimg" src="https://s1.nyt.com/du/books/images/9781982104061.jpg" alt="Card image cap" onclick ="change();">
+                <div class="card-body">
+                  <p style="font-weight: 700;">NEAR DARK</p>
+                  <p>$7.99</p>
+                  <p class="card-text">The 19th book in the Scot Harvath series. With a bounty on his head, Harvath makes an alliance with a Norwegian intelligence operative.</p>
+                  <div class="d-flex justify-content-between align-items-center shop-item">
+                    <p style="display: none;" class="shop-item-title">Near Dark</p>
+                    <img style="display: none;" class="shop-item-image" src="1.jpg" alt="">
+                    <div class="btn-group shop-item-details">
+                      <p style="display: none;" class="shop-item-price">$7.99</p>
+                      <button type="button" class="shop-item-button btn btn-sm btn-outline-secondary">Add to Cart</button>
+                    </div>
+                    <small class="text-muted">Author: Brad Thor</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="cardimg" src="2.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p style="font-weight: 700;">THE ORDER</p>
+                  <p>$7.99</p>
+                  <p class="card-text">The 20th book in the Gabriel Allon series. The art restorer and spy cuts his family’s vacation short to investigate whether Pope Paul VII was murdered.</p>
+                  <div class="d-flex justify-content-between align-items-center shop-item">
+                    <p style="display: none;" class="shop-item-title">The Order</p>
+                    <img style="display: none;" class="shop-item-image" src="2.jpg" alt="">
+                    <div class="btn-group shop-item-details">
+                      <p style="display: none;" class="shop-item-price">$7.99</p>
+                      <button type="button" class="shop-item-button btn btn-sm btn-outline-secondary">Add to Cart</button>
+                    </div>
+                    <small class="text-muted">Author: Daniel Silva</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="cardimg" src="3.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p style="font-weight: 700;">WHERE THE CRAWDADS SING</p>
+                  <p>$7.99</p>
+                  <p class="card-text">In a quiet town on the North Carolina coast in 1969, a young woman who survived alone in the marsh becomes a murder suspect.</p>
+                  <div class="d-flex justify-content-between align-items-center shop-item">
+                    <p style="display: none;" class="shop-item-title">WHERE THE CRAWDADS SING</p>
+                    <img style="display: none;" class="shop-item-image" src="3.jpg" alt="">
+                    <div class="btn-group shop-item-details">
+                      <p style="display: none;" class="shop-item-price">$7.99</p>
+                      <button type="button" class="shop-item-button btn btn-sm btn-outline-secondary">Add to Cart</button>
+                    </div>
+                    <small class="text-muted">Author: Delia Owens</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="cardimg" src="4.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p style="font-weight: 700;">THE VANISHING HALF</p>
+                  <p>$7.99</p>
+                  <p class="card-text">The lives of twin sisters who run away from a Southern Black community at age 16 diverge as one returns and the other takes on a different racial identity but their fates intertwine.</p>
+                  <div class="d-flex justify-content-between align-items-center shop-item">
+                    <p style="display: none;" class="shop-item-title">THE VANISHING HALF</p>
+                    <img style="display: none;" class="shop-item-image" src="4.jpg" alt="">
+                    <div class="btn-group shop-item-details">
+                      <p style="display: none;" class="shop-item-price">$7.99</p>
+                      <button type="button" class="shop-item-button btn btn-sm btn-outline-secondary">Add to Cart</button>
+                    </div>
+                    <small class="text-muted">Author: Brit Bennett</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="cardimg" src="5.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p style="font-weight: 700;">THE GUEST LIST</p>
+                  <p>$7.99</p>
+                  <p class="card-text">A wedding between a TV star and a magazine publisher on an island off the coast of Ireland turns deadly.</p>
+                  <div class="d-flex justify-content-between align-items-center shop-item">
+                    <p style="display: none;" class="shop-item-title">THE GUEST LIST</p>
+                    <img style="display: none;" class="shop-item-image" src="5.jpg" alt="">
+                    <div class="btn-group shop-item-details">
+                      <p style="display: none;" class="shop-item-price">$7.99</p>
+                      <button type="button" class="shop-item-button btn btn-sm btn-outline-secondary">Add to Cart</button>
+                    </div>
+                    <small class="text-muted">Author: Lucy Foley</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="cardimg" src="6.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p style="font-weight: 700;">THE SUBTLE ART OF NOT GIVING A F*CK</p>
+                  <p>$7.99</p>
+                  <p class="card-text">In this generation-defining self-help guide, a superstar blogger cuts through the crap to show us how to stop trying to be "positive" all the time so that we can truly become better, happier people.</p>
+                  <div class="d-flex justify-content-between align-items-center shop-item">
+                    <p style="display: none;" class="shop-item-title">THE SUBTLE ART OF NOT GIVING A F*CK</p>
+                    <img style="display: none;" class="shop-item-image" src="6.jpg" alt="">
+                    <div class="btn-group shop-item-details">
+                      <p style="display: none;" class="shop-item-price">$7.99</p>
+                      <button type="button" class="shop-item-button btn btn-sm btn-outline-secondary">Add to Cart</button>
+                    </div>
+                    <small class="text-muted">Author: Mark Manson</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="cardimg" src="7.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p style="font-weight: 700;">28 SUMMERS</p>
+                  <p>$7.99</p>
+                  <p class="card-text">A relationship that started in 1993 between Mallory Blessing and Jake McCloud comes to light while she is on her deathbed and his wife runs for president.</p>
+                  <div class="d-flex justify-content-between align-items-center shop-item">
+                    <p style="display: none;" class="shop-item-title">28 SUMMERS</p>
+                    <img style="display: none;" class="shop-item-image" src="7.jpg" alt="">
+                    <div class="btn-group shop-item-details">
+                      <p style="display: none;" class="shop-item-price">$7.99</p>
+                      <button type="button" class="shop-item-button btn btn-sm btn-outline-secondary">Add to Cart</button>
+                    </div>
+                    <small class="text-muted">Author: Elin Hilderbrand</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="cardimg" src="8.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p style="font-weight: 700;">THE ROOM WHERE IT HAPPENED</p>
+                  <p>$7.99</p>
+                  <p class="card-text">The former national security advisor gives his account of the 17 months he spent working for President Trump.</p>
+                  <div class="d-flex justify-content-between align-items-center shop-item">
+                    <p style="display: none;" class="shop-item-title">THE ROOM WHERE IT HAPPENED</p>
+                    <img style="display: none;" class="shop-item-image" src="8.jpg" alt="">
+                    <div class="btn-group shop-item-details">
+                      <p style="display: none;" class="shop-item-price">$7.99</p>
+                      <button type="button" class="shop-item-button btn btn-sm btn-outline-secondary">Add to Cart</button>
+                    </div>
+                    <small class="text-muted">Author: John Bolton</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="cardimg" src="9.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p style="font-weight: 700;">THEN SHE WAS GONE</p>
+                  <p>$7.99</p>
+                  <p class="card-text">Ten years after her daughter disappears, a woman tries to get her life in order but remains haunted by unanswered questions.</p>
+                  <div class="d-flex justify-content-between align-items-center shop-item">
+                    <p style="display: none;" class="shop-item-title">THEN SHE WAS GONE</p>
+                    <img style="display: none;" class="shop-item-image" src="9.jpg" alt="">
+                    <div class="btn-group shop-item-details">
+                      <p style="display: none;" class="shop-item-price">$7.99</p>
+                      <button type="button" class="shop-item-button btn btn-sm btn-outline-secondary">Add to Cart</button>
+                    </div>
+                    <small class="text-muted">Author: Lisa Jewell</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="cardimg" src="10.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p style="font-weight: 700;">LITTLE FIRES EVERYWHERE</p>
+                  <p>$7.99</p>
+                  <p class="card-text">We know at least part of the tragedy that will befall the characters — the mystery lies in figuring out how they got there. In “Little Fires Everywhere,” we begin not with a death but a house fire, and new questions: Who set it, and why?</p>
+                  <div class="d-flex justify-content-between align-items-center shop-item">
+                    <p style="display: none;" class="shop-item-title">LITTLE FIRES EVERYWHERE</p>
+                    <img style="display: none;" class="shop-item-image" src="10.jpg" alt="">
+                    <div class="btn-group shop-item-details">
+                      <p style="display: none;" class="shop-item-price">$7.99</p>
+                      <button type="button" class="shop-item-button btn btn-sm btn-outline-secondary">Add to Cart</button>
+                    </div>
+                    <small class="text-muted">Author: Celeste Ng</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="cardimg" src="11.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p style="font-weight: 700;">THE NICKEL BOYS</p>
+                  <p>$7.99</p>
+                  <p class="card-text">Two boys respond to horrors at a Jim Crow-era reform school in ways that impact them for years to come.</p>
+                  <div class="d-flex justify-content-between align-items-center shop-item">
+                    <p style="display: none;" class="shop-item-title">THE NICKEL BOYS</p>
+                    <img style="display: none;" class="shop-item-image" src="11.jpg" alt="">
+                    <div class="btn-group shop-item-details">
+                      <p style="display: none;" class="shop-item-price">$7.99</p>
+                      <button type="button" class="shop-item-button btn btn-sm btn-outline-secondary">Add to Cart</button>
+                    </div>
+                    <small class="text-muted">Author: Colson Whitehead</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="cardimg" src="12.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p style="font-weight: 700;">THIS TENDER LAND</p>
+                  <p>$7.99</p>
+                  <p class="card-text">Four orphans escape a Minnesota school and encounter a cross-section of different people struggling during the Great Depression.</p>
+                  <div class="d-flex justify-content-between align-items-center shop-item">
+                    <p style="display: none;" class="shop-item-title">THIS TENDER LAND</p>
+                    <img style="display: none;" class="shop-item-image" src="12.jpg" alt="">
+                    <div class="btn-group shop-item-details">
+                      <p style="display: none;" class="shop-item-price">$7.99</p>
+                      <button type="button" class="shop-item-button btn btn-sm btn-outline-secondary">Add to Cart</button>
+                    </div>
+                    <small class="text-muted">Author: William Kent Krueger</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <section id="yourcart" class="container content-section" style="margin-top: 2rem;">
+
+      <h2 class="section-header">CART</h2>
+
+      <div class="cart-row">
+          <span class="cart-item cart-header cart-column">ITEM</span>
+          <span class="cart-price cart-header cart-column">PRICE</span>
+          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+
+      <div class="cart-items">
+      </div>
+
+      <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">$39.97</span>
+      </div>
+
+      <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+
+  </section>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>Woah, you've gone too far underground, there's no books here! Head back up to pick something.</p>
+        <p>Or open the Navbar above to check us out on Instagram, Facebook and Twitter. We've got good dirt!</p>
+      </div>
+    </footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
